@@ -1,0 +1,14 @@
+---
+import ContentSection from "~/components/content-section.astro";
+import poster from "~/assets/poster-shiatsu.png"
+import {Image} from "astro:assets";
+---
+
+<ContentSection title="Manfaat bagi kesehatan" id="intro">
+  <Image
+  width={800}
+  class={"rounded-md"}
+  src={poster}
+  alt={"poster manfaat shiatsu"}
+  />
+</ContentSection>
