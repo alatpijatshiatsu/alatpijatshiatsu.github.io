@@ -1,12 +1,17 @@
 ---
 import "@fontsource-variable/inter";
+import Benefit from "~/components/benefit.astro";
 import Compatibility from "~/components/compatibility.astro";
+import Cta from "~/components/cta.astro";
 import Features from "~/components/features.astro";
 import Footer from "~/components/footer.astro";
 import Header from "~/components/header.astro";
 import Intro from "~/components/intro.astro";
+import Review from "~/components/review.astro";
 import Showcase from "~/components/showcase.astro";
+import Specification from "~/components/specification.astro";
 import Splash from "~/components/splash.astro";
+import Testimonial from "~/components/testimonial.astro";
 import "~/styles/index.css";
 
 const { generator, site } = Astro;
@@ -20,7 +25,7 @@ const description =
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon.ico"/>
     <meta name="generator" content={generator} />
 
     <title>Astro Landing Page</title>
@@ -61,13 +66,15 @@ const description =
   <body
     class="h-full overflow-x-hidden bg-default text-default text-base selection:bg-secondary selection:text-white"
   >
-    <Header />
     <Splash />
     <div class="space-y-24 px-8 py-32">
       <Intro />
+      <Benefit/>
       <Features />
-      <Compatibility />
-      <Showcase />
+      <Specification/>
+      <Review/>
+      <Testimonial />
+      <Cta/>
     </div>
     <Footer />
   </body>
