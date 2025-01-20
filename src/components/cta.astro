@@ -1,0 +1,25 @@
+---
+import ContentSection from "~/components/content-section.astro";
+import { Icon } from "astro-icon/components";
+---
+<ContentSection title="Mari Checkout!" id="intro">
+  <Fragment slot="lead">
+    Hanya satu langkah lagi untuk mendapatkan <span class="text-primary">pijatan</span> yang Anda butuhkan setelah seharian beraktivitas. <span class="text-primary">Checkout</span> sekarang dan rasakan manfaatnya!
+  </Fragment>
+  <div class="text-4xl my-4 animate-bounce text-center">
+    <p class="text-yellow-300 mb-5">checkout barangnya hanya dengan</p>
+    <span class="line-through text-red-500">Rp. 160.000</span>
+    <span class="text-green-600 font-bold"> Rp. 135.000 <span class="text-yellow-300 font-normal">saja!</span> </span>
+  </div>
+  <div class="relative">
+    <a href="https://wa.me/6281460467743?text=Halo%2C%20saya%20tertarik%20ingin%20membeli%20Alat%20Pijat%20Shiatsu-nya%2C%20apakah%20masih%20tersedia%3F" target="_blank" class="bg-green-600 p-5 rounded-md hover:text-slate-200 active:bg-green-700 active:text-slate-300"> 
+      <Icon name={"fa-brands:whatsapp"} class={"inline-block"}/>
+      Checkout Alat Pijat Shiatsu
+    </a>
+    <div class="absolute left-1/2 transform -translate-x-1/2 animate-bounce" style="top: -40px;">
+      <svg class="w-12 h-12 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v13m7-7l-7 7-7-7"></path>
+      </svg>
+    </div>
+  </div>
+</ContentSection>
