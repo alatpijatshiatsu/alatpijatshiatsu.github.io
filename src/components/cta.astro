@@ -1,6 +1,8 @@
 ---
 import ContentSection from "~/components/content-section.astro";
 import { Icon } from "astro-icon/components";
+import { Image } from "astro:assets";
+import logo from "~/assets/logo-shiatsu.png"
 ---
 
 <ContentSection title="Mari Checkout!" id="intro">
@@ -45,7 +47,12 @@ import { Icon } from "astro-icon/components";
       </div>
     </a>
   </div>
-  <p class="text-center italic md:w-9/12">
+  <p class="text-center italic md:w-9/12 mb-5">
     Jadikan sebagai hadiah <span class="not-italic">🎁</span> untuk orang terkasih bagi Anda dengan Bantal Pijat Shiatsu dan biarkan mereka menikmati momen relaksasi di tengah kesibukan sehari-hari <span class="not-italic">☺️</span>. Ini adalah salahsatu cara yang sempurna untuk menunjukkan kasih sayang dan perhatian kepada orang-orang tercinta bagi Anda <span class="not-italic">❤️</span>
   </p>
+  <Image
+       width={200}
+       src={logo}
+       alt={"Logo"}
+       />
 </ContentSection>
