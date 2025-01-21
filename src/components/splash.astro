@@ -20,7 +20,7 @@ const sizes = "(min-width: 640px) 42vw, 67vw";
     >
       <!-- <Icon name="logomark" class="size-20 text-white md:size-32" /> -->
        <Image
-       class={"mb-[40px] md:mb-0"}
+       class={"md:mb-0 hidden md:block"}
        width={200}
        src={logo}
        alt={"Logo"}
@@ -37,7 +37,7 @@ const sizes = "(min-width: 640px) 42vw, 67vw";
       class="w-2/3 max-w-3xl self-start sm:w-10/12 sm:self-auto sm:justify-self-start"
     >
       <Image
-        class="h-full w-full object-cover rotate-45"
+        class="object-cover rotate-45"
         src={astronautImage}
         widths={widths}
         sizes={sizes}
