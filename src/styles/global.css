@@ -17,3 +17,16 @@ a,
   @apply bg-clip-text text-transparent;
   @apply bg-gradient-to-br from-indigo-500 via-fuchsia-500 to-pink-500;
 }
+
+@keyframes custom-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px); /* Adjust this value to control the height */
+  }
+}
+
+.animate-bounce {
+  animation: custom-bounce 1s infinite;
+}
